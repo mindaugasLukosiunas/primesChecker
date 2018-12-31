@@ -71,6 +71,21 @@ namespace UITests.Tests
             primeCheckerPage.ErrorMessageFieldIsShown().Should().BeFalse();
         }
 
+        [Test]
+        public void GifSwitchesToJoke()
+        {
+            var primeCheckerPage = new MainPageElements(_driver);
+            primeCheckerPage.EnterANumber("6");
+            primeCheckerPage.ClickCheckIfItsPrimeButton();
+            primeCheckerPage.CheckGifIsShown().Should().BeTrue();
+            primeCheckerPage.ClearNumberField();
+            primeCheckerPage.EnterANumber("7");
+            primeCheckerPage.ClickCheckIfItsPrimeButton();
+            primeCheckerPage.WaitForGifToBeOffscreen();
+            primeCheckerPage.CheckGifIsShown().Should().BeFalse();
+            primeCheckerPage.GetJokeText().Should().NotContain("No joke this time. :(");
+        }
+
         [TearDown]
         public void TearDown()
         {

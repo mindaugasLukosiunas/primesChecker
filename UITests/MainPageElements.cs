@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 using System;
 using System.Linq;
 
@@ -9,7 +10,6 @@ namespace UITests
     {
         IWebDriver _driver;
         WebDriverWait _wait;
-
 
         public MainPageElements(IWebDriver driver)
         {
@@ -41,8 +41,13 @@ namespace UITests
         public bool CheckGifIsShown()
         {
             var giflabel = _driver.FindElements(By.Id("giflabel"));
-            _wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("giflabel")));
+           
             return giflabel.Count() > 0 && giflabel.FirstOrDefault().Displayed;
+        }
+
+        public void WaitForGifToBeOffscreen()
+        {
+            _wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.Id("giflabel")));
         }
 
         public bool CheckAJokeFieldIsShown()

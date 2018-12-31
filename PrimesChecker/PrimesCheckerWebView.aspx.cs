@@ -10,10 +10,11 @@ namespace PrimesChecker
         protected void Button1_Click(object sender, EventArgs e)
         {
             /*Parsing is usually a risky operation, 
-             * even if we validate the input to only be a number, 
+             * even if we have a nice ASP.NET in-build form validations for the input to only be a number, 
              * it's still better to catch an exception.
              * Of course exceptions should be handled more precisely, but for demonstration
-             will catch a generic Exception*/
+             will catch a generic Exception.
+             */
             try
             {
 
