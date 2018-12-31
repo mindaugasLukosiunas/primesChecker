@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
     <title></title>
 </head>
+
+<!--
+This is the HTML page I made using Bootstrap for mobile responsiveness. style file is starz.css where the moving gradient I found on codepen.io.
+    Added some of my own and formatter the form.
+-->
+
 <body>
     <form id="form1" runat="server">
         <div class="container align-content-center justify-content-center">
