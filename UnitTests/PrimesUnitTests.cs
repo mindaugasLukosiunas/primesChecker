@@ -6,6 +6,8 @@ namespace UnitTests
 {
     public class PrimesUnitTests
     {
+        //These tests are parametrized
+
         [Test]
         //Tests if the algorithm works correctly taking the first prime 2, and a random large prime, and some random prime in the middle
         public void PassingPrimeNumbersAlgorithmReturnsTrue([Values(982451653, 2, 167)] double num)
