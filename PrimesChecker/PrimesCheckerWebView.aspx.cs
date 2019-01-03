@@ -30,12 +30,12 @@ namespace PrimesChecker
                     jokeResult.Text = joke;
                     giflabel.Text = "";
                 }
-                //if the number i not prime, show "no joke" text and a gif.
+                //if the number is not prime, show "no joke" text and a gif.
                 else
                 {
                     result.Text = "You entered " + num + ". This is not a prime number. Try another one! ";
                     jokeResult.Text = "No joke this time. :(";
-                    giflabel.Text = "<img src = 'Recources/giphy.gif'>";
+                    giflabel.Text = "<img src = '/Recources/giphy.gif'>";
                 }
 
             } catch (Exception)
