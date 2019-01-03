@@ -7,7 +7,7 @@ namespace UITests
     public class DriverInit
     {
         IWebDriver _driver;
-        string url = "http://localhost:50385/PrimesCheckerWebView.aspx";
+        string url = "http://localhost:8080/Default.aspx";
 
         public IWebDriver GetDriver()
         {
