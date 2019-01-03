@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PrimesCheckerWebView.aspx.cs" Inherits="PrimesChecker.PrimesCheckerWebView" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PrimesChecker.PrimesCheckerWebView" %>
 
 <!DOCTYPE html>
 

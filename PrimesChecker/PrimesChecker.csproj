@@ -101,7 +101,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PrimesCheckerWebView.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Recources\giphy.gif" />
     <Content Include="Recources\starz.css" />
     <Content Include="Web.config" />
@@ -109,12 +109,12 @@
   <ItemGroup>
     <Compile Include="CodeBehind\JokesRequest.cs" />
     <Compile Include="CodeBehind\PrimesAlgorithm.cs" />
-    <Compile Include="PrimesCheckerWebView.aspx.cs">
-      <DependentUpon>PrimesCheckerWebView.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PrimesCheckerWebView.aspx.designer.cs">
-      <DependentUpon>PrimesCheckerWebView.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
